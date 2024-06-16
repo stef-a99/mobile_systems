@@ -1,10 +1,10 @@
 # OBSERVER
 
-Un *observer* monitora uno o più *subject* e viene notificato in caso di modifiche di questi ultimi. 
+Un *observer* si registra presso uno o più specifici *subject*, i quali notificano l'*observer* nel caso in cui subiscano modifiche. 
 
 #### VANTAGGI
-1) decoupling tra subject e observer
-2) supporto alla comunicazione di gruppo (vari subject legati ad uno stesso observer)
+1) **decoupling tra subject e observer**
+2) supporto alla **comunicazione di gruppo** (un *subject* può avere più *observer*)
 
 #### SVANTAGGIO
-1) Scalabilità
+1) Scalabilità limitata

@@ -9,15 +9,16 @@ Per quanto riguarda il versioning, abbiamo le seguenti fasi:
 - **propagazione degli aggiornamenti**;
 - **rilevamento delle modifiche**;
 - **riconciliazione** 
-	- tramite log delle operazioni della modifica --> si elabora il log complessivo partendo dall'ultima versione comune prima dei cambiamenti;
-	- tramite gli stati dei dati modificati --> opera direttamente sui dati modificati.
+	- tramite **log delle operazioni della modifica** --> si elabora il log complessivo partendo dall'ultima versione comune prima dei cambiamenti;
+	- tramite gli **stati dei dati modificati** --> opera direttamente sui dati modificati.
 
 Nei casi reali, la sincronizzazione avviene **esclusivamente fra coppie di nodi**, adottando tre tipi di architetture:
 - **CENTRALIZZATA**: un nodo master per ogni dato. I nodi operano su copie del dato e devono sincronizzarsi con il master
 - **AD ALBERO**: un master radice per ogni dato, sotto-alberi che si occupano delle copie del dato e le foglie che utilizzano tali copie. La sincronizzazione procede dalle foglie verso il master (dal basso verso l'alto)
 - **A GRAFICO CICLICO CONNESSO**: 
 	- più generale
-	- maggiore flessibilità
-	- gestione più complessa, perché non si sa quali versioni considerare per la comparazione di stato
+	- **maggiore flessibilità**
+	- **gestione più complessa**, perché non si sa quali versioni considerare per la comparazione di stato
 	- raramente usata nei sistemi moderni
-Infine, gli algoritmi di riconciliazione possono beneficiare della conoscenza della struttura dei dati condivisi e dei servizi offerti dall'applicazione.
+
+Infine, gli **algoritmi di riconciliazione** possono beneficiare della **conoscenza della struttura dei dati** condivisi e dei **servizi offerti dall'applicazione**.

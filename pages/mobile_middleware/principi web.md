@@ -1,5 +1,13 @@
 # PRINCIPI WEB
 
-Si segue il **principio di applicazione del linguaggio meno potente**, per implementare qualsiasi caratteristica in modo da avere **meno vincoli possibili** nelle implementazioni. 
+Seguono le linee guida dei principi dello stack TCP/IP sottostante:
+- **semplicità**;
+- **robustezza**;
+- **modularità**;
+- **decentralizzazione**.
 
-Problema centrale: **mantenere lo stato per le interazioni statiche** --> Risolvo con REST basato su URI, HTTP, XML.
+Per gli accessi e la rappresentazione e trasformazione dei dati, si segue il **principio del linguaggio meno potente**, col fine di implementare qualsiasi feature, con **meno vincoli possibili**
+
+Un problema importante è il **mantenimento dello stato per le interazioni stateful**. Ad esempio, REST:
+- C/S, stateless, chacheable, a livelli;
+- interfaccia per trasferire lo stato tra C e S

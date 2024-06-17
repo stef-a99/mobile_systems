@@ -4,7 +4,7 @@
 
 Il MW deve essere **riutilizzabile** in varie applicazioni
 
-La nozione classica di MW non è adatta ad ambienti mobili, per via di:
+La nozione classica di MW **non è adatta ad ambienti mobili,** per via di:
 - disponibilità energetica e risorse limitate;
 - mobilità dei nodi.
 

@@ -3,8 +3,11 @@
 Esistono diverse proposte per lo sviluppo di ambienti di sviluppo/runtime per sistemi mobili, per via dell'eterogeneità di questi ultimi. Tra tutti, i più importanti sono iOS e ==Android==.
 
 Spesso ci si riferisce ad Android come un Sistema Operativo, ma questa definizione è spesso inesatta. Infatti, oltre che su un [kernel Linux-based](kernel.md), poggia su altri 4 *layers*:
-- ==**Librerie native**==: alcuni componenti fondamentali sono implementati in C/C++ per migliorare le prestazioni. Esempio: stack multimediale.
-- **==Android Runtime==**: Nei classici S.O., si può scrivere del codice in un qualsiasi linguaggio di programmazione ed eseguirne l'exe senza problemi. Inoltre, il codice può anche presentare errori/loop. ==In Android, questo non è possibile==. Infatti, siamo vincolati a scrivere SOLAMENTE applicazioni scritte in una versione Java Android-compliant (vedi [differenze tra java classico e android-compliant](nativeLib.md#DALVIK%20VM)), che verranno eseguite dal supporto al runtime, che è PARTE del mobile MW di Android.
+- ==**Librerie native**==: alcuni componenti fondamentali sono implementati in C/C++ per migliorare le prestazioni. Esempio: stack multimediale. 
+  Sono sviluppate da developer di sistema e **non sono modificabili**. Sono **accessibili tramite** opportune **API Java**. Tipicamente, sono ideate **per task pesanti**, come grafica e servizi multimediali.
+
+
+- **==Android Runtime==**: Nei classici S.O., si può scrivere del codice in un qualsiasi linguaggio di programmazione ed eseguirne l'exe senza problemi. Inoltre, il codice può anche presentare errori/loop. ==In Android, questo non è possibile==. Infatti, siamo vincolati a scrivere SOLAMENTE applicazioni scritte in una versione Java Android-compliant (vedi [differenze tra java classico e android-compliant](Dalvik_vs_JVM.md#DALVIK%20VM)), che verranno eseguite dal supporto al runtime, che è PARTE del mobile MW di Android.
   Nello specifico, l'Android Runtime è un ambiente di esecuzione per le applicazioni, scritto in Java Android-compliant e basato su Dalvik VM, ovvero la VM che esegue le applicazioni.
 - ==**Android Framework**==: fornisce applicazioni con servizi avanzati, mediante delle classi (oggetti) scritte(i) in Java Android-compliant. Sono messe in esecuzione da Android Runtime; quindi, non puoi scegliere se eseguirle o meno: quella è una decisione che spetta al mobile MW.
 - ==**Application**==: applicazioni native fornite dal sistema o sviluppate dai programmatori.

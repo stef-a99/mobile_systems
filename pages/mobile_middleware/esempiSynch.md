@@ -10,7 +10,7 @@
 #### 2) Concurrent Versions Systems (CVS)
 
 Sfruttano la sincronizzazione a livello di dati.
-Le prime implementazioni prevedevano un **server centralizzato** che rilasciava un lock ad un solo client alla volta per accedere in scrittura al file.
-Ora si usa un approccio ottimistico, con architettura decentralizzata in cui ogni membro del team può lavorare sulla sua copia in locale e riconcilia le eventuali differenze (es. GitHub).
+Le **prime implementazioni** prevedevano un **server centralizzato** che rilasciava un lock ad un solo client alla volta per accedere in scrittura al file.
+**Ora si usa un approccio ottimistico**, con **architettura decentralizzat**a in cui ogni membro del team può lavorare sulla sua copia in locale e riconcilia le eventuali differenze (es. GitHub).
 
 Nei sistemi mobili per la sincronizzazione di mail/DB, lo standard è Synchronization Markup Language (SyncML).

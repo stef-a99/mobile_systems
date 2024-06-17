@@ -2,7 +2,7 @@
 
 Dato che molti dispositivi hanno delle copie locali di una stessa risorsa, bisogna trovare un meccanismo di **sincronizzazione** per **evitare inconsistenze** nell'aggiornamento della risorsa in remoto, in modo da avere una visione globale dello stato della risorsa. Questo è ottenuto per mezzo di una **synchronization engine**, che rileva e risolve i conflitti durante il processo di sincronizzazione per risolvere le inconsistenze.
 
-Ci sono due tipi di sincronizzazione:
+Ci sono due **tipi di sincronizzazione**:
 1) **a livello di processo**: i **processi agiscono sullo stesso dato** e le **inconsistenze** sono **risolte** tramite l'imposizione dell'**accesso sequenziale** per aggiornare le info;
 2) **a livello di dati**: i processi lavorano anche offline sulla loro **copia locale**, e la sincronizzano sul DB **periodicamente o in base a determinati eventi** (*traveling salesmen scenario*). Per le inconsistenze, è necessaria la ***synch engine***. Questa è la tipologia presente nei sistemi mobili. È molto usata perché i casi di conflitti non risolvibili sono molto rari.
    

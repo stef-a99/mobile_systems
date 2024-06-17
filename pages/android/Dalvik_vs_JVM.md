@@ -1,11 +1,8 @@
-# LIBRERIE NATIVE
-
-Le librerie native sono scritte in modo tale da essere eseguite efficientemente sul kernel Linux. Sono sviluppate da developer di sistema e non sono modificabili. Sono accessibili tramite opportune API Java. Tipicamente, sono ideate per task pesanti, come grafica e servizi multimediali.
-
+# Classic Java vs Android-Java
 
 # DALVIK VM
 
-La Dalvik VM è *registry-based*, ovvero sfrutta l'architettura ARM, a differenza della JVM tradizionale, che è stack-based.
+La Dalvik VM è *registry-based*, ovvero sfrutta l'architettura ARM, a differenza della JVM tradizionale, che è stack-based (dove i dati sono manipolati tramite push/pop verso/da uno stack).
 
 - ###### Stack-based vs Registry-based
   

@@ -4,5 +4,5 @@ I *wakelocks* sono dei lock che permettono alle applicazioni di accedere alle fu
 
 I wakelocks sono un esempio di [**cross-layering pattern**](crossLayering.md), poiché il livello applicativo può interagire direttamente coi livelli HW sottostanti.
 
-Il lock è rilasciato quando l'applicazione non è più (quando la metto in pausa o la chiudo).
+Il lock è rilasciato quando l'applicazione non è più attiva (quando la metto in pausa o la chiudo).
 ![](Pasted%20image%2020240610092229.png)
